@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roman Fu — For Hire</title>
-  <meta name="description" content="Portfolio and for‑hire page for Roman Fu — Marketing + Psychology student at CSUF, campus activations, social strategy, research, and event ops." />
+  <meta name="description" content="Portfolio and for-hire page for Roman Fu — Marketing + Psychology student at CSUF, campus activations, social strategy, research, and event ops." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind via CDN for a single‑file site on GitHub Pages -->
+  <!-- Tailwind via CDN for a single-file site on GitHub Pages -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--ring:rgba(59,130,246,.5)}
@@ -43,11 +43,11 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8 grid md:grid-cols-2 gap-8 items-center">
+  <!-- Hero (images removed) -->
+  <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8">
     <div>
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research‑minded Creator</span></h1>
-      <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research‑informed strategies that convert.</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research-minded Creator</span></h1>
+      <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research-informed strategies that convert.</p>
       <div class="mt-6 flex flex-wrap gap-2">
         <span class="chip">CSUF ‘26</span>
         <span class="chip">Depop Campus Manager</span>
@@ -59,33 +59,24 @@
         <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold focus-ring text-center">Let’s Work Together</a>
         <a href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold focus-ring text-center">LinkedIn</a>
       </div>
-      <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852‑6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
-    </div>
-    <div class="grid grid-cols-3 gap-3">
-      <!-- Swap these placeholders with your own photos in /assets once you push to GitHub -->
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975922215-c8e3f4d0f94f?q=80&w=900&auto=format&fit=crop" alt="Roman — campus activation"/>
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=900&auto=format&fit=crop" alt="Roman — speaking"/>
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975685018-4c09e94d9f8d?q=80&w=900&auto=format&fit=crop" alt="Roman — event ops"/>
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=900&auto=format&fit=crop" alt="Team meeting"/>
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=900&auto=format&fit=crop" alt="Branding board"/>
-      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=900&auto=format&fit=crop" alt="Notebook planning"/>
+      <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852-6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
     </div>
   </section>
 
   <!-- Required Sections -->
   <section id="who" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Who is Roman Fu?</h2>
-    <p class="mt-4 text-slate-700">I am a CSUF student double majoring in Business Administration with a Marketing concentration and Psychology. I thrive where creativity meets data — designing campaigns that feel human and perform. I have led student orgs, shipped campus activations, and contributed to research that informs better outreach.</p>
+    <p class="mt-4 text-slate-700">I am a CSUF student double majoring in Business Administration with a Marketing concentration and Psychology. I thrive where creativity meets data, designing campaigns that feel human and perform. I have led student orgs, shipped campus activations, and contributed to research that informs better outreach.</p>
   </section>
 
   <section id="what" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">What am I looking for?</h2>
-    <p class="mt-4 text-slate-700">Part‑time or project‑based roles in brand marketing, campus activations, social strategy, and research‑driven insights work. I am excited by roles that combine audience discovery, content production, and measurable growth.</p>
+    <p class="mt-4 text-slate-700">Part-time or project-based roles in brand marketing, campus activations, social strategy, and research-driven insights work. I am excited by roles that combine audience discovery, content production, and measurable growth.</p>
   </section>
 
   <section id="when" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">When can I start?</h2>
-    <p class="mt-4 text-slate-700">Immediately for remote and project work. On‑site availability built around a student schedule. I communicate clearly, set expectations, and deliver on time.</p>
+    <p class="mt-4 text-slate-700">Immediately for remote and project work. On-site availability built around a student schedule. I communicate clearly, set expectations, and deliver on time.</p>
   </section>
 
   <section id="where" class="mx-auto max-w-6xl px-4 py-12">
@@ -95,7 +86,7 @@
 
   <section id="why" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Why a “for hire” page?</h2>
-    <p class="mt-4 text-slate-700">This page makes my value crystal clear for hiring teams: outcomes, context, and proof. Recruiters can scan results, verify scope, and contact me fast. It also anchors my outreach — every email and DM points here, which increases reply rates and shortens time to hire.</p>
+    <p class="mt-4 text-slate-700">This page makes my value crystal clear for hiring teams: outcomes, context, and proof. Recruiters can scan results, verify scope, and contact me fast. It also anchors my outreach, because every email and DM points here, which increases reply rates and shortens time to hire.</p>
   </section>
 
   <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
@@ -104,7 +95,7 @@
         <h2 class="text-3xl font-extrabold">How can you reach me?</h2>
         <p class="mt-4 text-slate-700">Phone and email are best. I respond within one business day.</p>
         <ul class="mt-6 space-y-2 text-lg">
-          <li><strong>Phone:</strong> <a class="underline" href="tel:+19518526664">+1 (951) 852‑6664</a></li>
+          <li><strong>Phone:</strong> <a class="underline" href="tel:+19518526664">+1 (951) 852-6664</a></li>
           <li><strong>Email:</strong> <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></li>
           <li><strong>LinkedIn:</strong> <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">linkedin.com/in/roman-fu-6142561b3</a></li>
         </ul>
@@ -131,7 +122,7 @@
     </div>
   </section>
 
-  <!-- Resume‑style Sections -->
+  <!-- Resume-style Sections -->
   <section id="experience" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Experience</h2>
     <div class="mt-6 grid gap-6">
@@ -148,7 +139,7 @@
         <ul class="list-disc ml-5 mt-2 text-slate-700">
           <li>Led the YouTube × NFL Street Team campaign at USC and CSUF using guerilla tactics.</li>
           <li>Distributed 8,000 flyers, generated 800 QR scans, and drove 10,000+ impressions.</li>
-          <li>Analyzed post‑activation surveys to deliver actionable insights on campaign performance.</li>
+          <li>Analyzed post-activation surveys to deliver actionable insights on campaign performance.</li>
         </ul>
       </article>
       <article class="card rounded-2xl p-6">
@@ -171,7 +162,7 @@
         <ul class="list-disc ml-5 mt-2 text-slate-700">
           <li>Converted approximately 50 prospects to customers by communicating program value.</li>
           <li>Taught 500+ group and private lessons tailored to client goals.</li>
-          <li>Collaborated with five organizations for demos that lifted in‑door prospects by 20%.</li>
+          <li>Collaborated with five organizations for demos that lifted in-door prospects by 20%.</li>
         </ul>
       </article>
     </div>
@@ -191,9 +182,9 @@
       <article class="card rounded-2xl p-6">
         <h3 class="text-xl font-bold">President — Fullerton Fashion Association <span class="text-slate-500 font-semibold">Nov 2023 to Jan 2025</span></h3>
         <ul class="list-disc ml-5 mt-2 text-slate-700">
-          <li>Forged a partnership with Poshmark that drove 400+ sign‑ups and 30% higher engagement.</li>
+          <li>Forged a partnership with Poshmark that drove 400+ sign-ups and 30% higher engagement.</li>
           <li>Fundraised $7,300+ via partnerships and collaborations.</li>
-          <li>Directed eight Poshmark‑hosted events and forty general events aligned to brand goals.</li>
+          <li>Directed eight Poshmark-hosted events and forty general events aligned to brand goals.</li>
         </ul>
       </article>
     </div>
@@ -233,19 +224,13 @@
     </div>
   </section>
 
-  <!-- Photo gallery with many images to showcase personality -->
+  <!-- Photos section kept but images removed -->
   <section id="gallery" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Photos</h2>
-    <p class="mt-2 text-slate-700">A quick look at campus life, events, and the work vibe. Replace these with your own images in <code>/assets</code>.</p>
+    <p class="mt-2 text-slate-700">Currently not displaying images.</p>
+    <!-- TODO: If you decide to add photos later, place <img> elements here or create a CSS grid like before -->
     <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman1/800/600" alt="Roman photo 1">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman2/800/600" alt="Roman photo 2">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman3/800/600" alt="Roman photo 3">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman4/800/600" alt="Roman photo 4">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman5/800/600" alt="Roman photo 5">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman6/800/600" alt="Roman photo 6">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman7/800/600" alt="Roman photo 7">
-      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman8/800/600" alt="Roman photo 8">
+      <!-- intentionally left empty -->
     </div>
   </section>
 
@@ -257,8 +242,8 @@
         <p class="text-sm text-slate-600">Marketing + Psychology • CSUF ‘26</p>
       </div>
       <div class="text-sm text-slate-700">
-        <p>Contact: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a> • <a class="underline" href="tel:+19518526664">+1 (951) 852‑6664</a></p>
-        <p>LinkedIn: <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">roman‑fu</a></p>
+        <p>Contact: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a> • <a class="underline" href="tel:+19518526664">+1 (951) 852-6664</a></p>
+        <p>LinkedIn: <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">roman-fu</a></p>
       </div>
       <div class="flex md:justify-end">
         <a href="#top" class="px-4 py-2 rounded-xl border font-semibold">Back to top</a>
