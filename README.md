@@ -1,323 +1,282 @@
-# romanfu.github.io
-Roman's personal website
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roman Fu - For Hire</title>
-  <meta name="description" content="For Hire page - Roman Fu, CSUF Marketing and Psychology student - campus activations, research, and creative marketing." />
-  <meta property="og:title" content="Roman Fu - For Hire" />
-  <meta property="og:description" content="Who, What, When, Where, Why, and How - hire Roman Fu." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/roman-cover.jpg" />
+  <title>Roman Fu — For Hire</title>
+  <meta name="description" content="Portfolio and for‑hire page for Roman Fu — Marketing + Psychology student at CSUF, campus activations, social strategy, research, and event ops." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN for a single‑file site on GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --bg:#0f1115; --card:#151822; --muted:#9aa4b2; --text:#e6eaf2; --brand:#6ee7b7; --accent:#60a5fa; --ring:#a78bfa;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;scroll-behavior:smooth;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-    body{background:linear-gradient(120deg,#0b0e13,#0f1115 40%,#10141b);color:var(--text)}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(16,20,27,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:40}
-    nav{display:flex;align-items:center;justify-content:space-between}
-    .nav-links{display:flex;gap:16px;flex-wrap:wrap}
-    .badge{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,#1c2430,#161c27);padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:9999px}
-    .section{padding:56px 0;border-bottom:1px solid rgba(255,255,255,.07)}
-    h1{font-size:44px;line-height:1.05;margin:12px 0 8px}
-    h2{font-size:28px;margin:0 0 12px}
-    h3{font-size:20px;margin:18px 0 8px;color:#d7dceb}
-    p{color:var(--muted);line-height:1.7;margin:8px 0 0}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-    .card{background:linear-gradient(180deg,#171b26,#121622);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
-    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--brand),#4ade80);color:#0b0e13;font-weight:700;border:none;border-radius:12px;padding:12px 16px;cursor:pointer}
-    .btn.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18)}
-    .grid{display:grid;gap:16px}
-    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
-    @media (max-width:920px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:repeat(2,1fr)}.grid.cols-4{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:560px){.grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
-    .pill{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.14);border-radius:9999px;font-size:12px;color:#b5becc}
-    .list{display:grid;gap:10px;margin-top:8px}
-    .list li{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:12px}
-    .gallery img{width:100%;height:230px;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:#0b0e13}
-    .kpis{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px}
-    .kpi{flex:1 1 160px;background:linear-gradient(180deg,#121623,#0f1320);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px}
-    .kpi b{font-size:22px;color:#d9f99d}
-    footer{padding:34px 0;color:#9aa4b2}
-    .contact-card{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
-    @media (max-width:840px){.contact-card{grid-template-columns:1fr}}
-    .contact-item{display:flex;align-items:center;gap:10px}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    /* subtle scroll anchors */
-    .anchor{scroll-margin-top:96px}
-    /* link cards */
-    .linkcard{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.03)}
+    :root{--ring:rgba(59,130,246,.5)}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    .chip{border:1px solid rgba(0,0,0,.08);padding:.35rem .6rem;border-radius:999px;background:rgba(0,0,0,.03)}
+    .card{background:white;border:1px solid rgba(0,0,0,.06);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+    .glass{backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.7)}
+    .focus-ring:focus{outline:none;box-shadow:0 0 0 .25rem var(--ring)}
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Roman Fu",
-      "jobTitle": "Marketing Student - Campus Activations and Research",
-      "email": "mailto:fumanro88@gmail.com",
-      "telephone": "+1-951-852-6664",
-      "url": "https://romanfu.github.io/",
-      "sameAs": [
-        "https://www.linkedin.com/in/roman-fu-6142561b3/"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Fullerton",
-        "addressRegion": "CA",
-        "addressCountry": "US"
-      }
-    }
-  </script>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <nav aria-label="Primary">
-        <div class="badge" aria-label="Contact details">
-          <span>📞 <a href="tel:+19518526664" aria-label="Call Roman">+1 951 852 6664</a></span>
-          <span>•</span>
-          <span>✉️ <a href="mailto:fumanro88@gmail.com" aria-label="Email Roman">fumanro88@gmail.com</a></span>
-        </div>
-        <div class="nav-links">
-          <a href="#who">Who</a>
-          <a href="#what">What</a>
-          <a href="#when">When</a>
-          <a href="#where">Where</a>
-          <a href="#why">Why</a>
-          <a href="#how">How</a>
-          <a href="#resume">Resume</a>
-          <a href="#gallery">Photos</a>
-        </div>
+<body class="bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 glass border-b border-slate-200/60">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-extrabold tracking-tight text-xl">Roman Fu</a>
+      <nav class="hidden sm:flex gap-6 text-sm font-semibold">
+        <a href="#who" class="hover:underline">Who</a>
+        <a href="#what" class="hover:underline">What</a>
+        <a href="#when" class="hover:underline">When</a>
+        <a href="#where" class="hover:underline">Where</a>
+        <a href="#why" class="hover:underline">Why</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#experience" class="hover:underline">Experience</a>
+        <a href="#activities" class="hover:underline">Activities</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#gallery" class="hover:underline">Photos</a>
       </nav>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-sm font-semibold focus-ring">Hire Me</a>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="section hero">
-      <div class="card">
-        <span class="pill">For Hire - Student Marketer and Research Assistant</span>
-        <h1>Hi, I am <span style="color:var(--brand)">Roman Fu</span>.</h1>
-        <p>I build creative campus activations, synthesize data into clear insights, and help brands grow with smart experiments. I am double majoring in Business Marketing and Psychology at Cal State Fullerton.</p>
-        <div class="kpis" aria-label="Highlights">
-          <div class="kpi"><b>30,000+</b><br><span class="muted">Social impressions across campaigns</span></div>
-          <div class="kpi"><b>100</b><br><span class="muted">Conversions from Depop activations</span></div>
-          <div class="kpi"><b>$7,300</b><br><span class="muted">Raised for student org initiatives</span></div>
-          <div class="kpi"><b>500+</b><br><span class="muted">Lessons taught as a program coordinator</span></div>
-        </div>
-        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn" href="#how">Hire me</a>
-          <a class="btn secondary" href="#resume">View resume</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+  <!-- Hero -->
+  <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research‑minded Creator</span></h1>
+      <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research‑informed strategies that convert.</p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="chip">CSUF ‘26</span>
+        <span class="chip">Depop Campus Manager</span>
+        <span class="chip">CMO — Formula SAE</span>
+        <span class="chip">Former FFA President</span>
+        <span class="chip">Data analysis • SPSS</span>
       </div>
-      <div class="card">
-        <img src="images/roman-cover.jpg" alt="Roman smiling at a campus event" style="width:100%;height:100%;object-fit:cover;border-radius:14px" />
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold focus-ring text-center">Let’s Work Together</a>
+        <a href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold focus-ring text-center">LinkedIn</a>
       </div>
-    </section>
+      <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852‑6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
+    </div>
+    <div class="grid grid-cols-3 gap-3">
+      <!-- Swap these placeholders with your own photos in /assets once you push to GitHub -->
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975922215-c8e3f4d0f94f?q=80&w=900&auto=format&fit=crop" alt="Roman — campus activation"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=900&auto=format&fit=crop" alt="Roman — speaking"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975685018-4c09e94d9f8d?q=80&w=900&auto=format&fit=crop" alt="Roman — event ops"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=900&auto=format&fit=crop" alt="Team meeting"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=900&auto=format&fit=crop" alt="Branding board"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=900&auto=format&fit=crop" alt="Notebook planning"/>
+    </div>
+  </section>
 
-    <!-- WHO -->
-    <section id="who" class="section anchor">
-      <h2>Who is Roman Fu</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>About</h3>
-          <p>I am a student marketer with a research mindset. I like campaigns that are measurable and experiences that feel personal. My background blends event activations, social media, and research methods. I care about community impact and I like projects where I can test ideas fast.</p>
-          <ul class="list">
-            <li><strong>Education</strong> - California State University Fullerton - B.A. Business Administration, Marketing concentration - B.A. Psychology - Expected 2026</li>
-            <li><strong>Strengths</strong> - Activation planning - data analysis - content production - team leadership</li>
-            <li><strong>Tools</strong> - Excel - SPSS - Canva - CapCut - Adobe - Google Workspace - Microsoft Suite - Brandwatch</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Quick facts</h3>
-          <ul class="list">
-            <li>Led Poshmark partnership - 400+ sign-ups - grew FFA to largest CSUF student organization</li>
-            <li>Team lead for YouTube x NFL Street Team at USC and CSUF - 8,000 flyers - 800 scans - 10,000+ impressions</li>
-            <li>Depop Campus Manager - planned 8 activations - 100 conversions - weekly strategy syncs</li>
-            <li>Research intern - Project Gamble - segmentation frameworks - survey design - IRB standards</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <!-- Required Sections -->
+  <section id="who" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Who is Roman Fu?</h2>
+    <p class="mt-4 text-slate-700">I am a CSUF student double majoring in Business Administration with a Marketing concentration and Psychology. I thrive where creativity meets data — designing campaigns that feel human and perform. I have led student orgs, shipped campus activations, and contributed to research that informs better outreach.</p>
+  </section>
 
-    <!-- WHAT -->
-    <section id="what" class="section anchor">
-      <h2>What are you looking for</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <p>I am seeking part-time or project-based roles in campus marketing, event activations, social media, or research assistance. I add the most value where outreach meets analysis, such as planning tablings that convert and reporting insights that steer the next sprint.</p>
-          <div class="list">
-            <div class="linkcard"><span>Campus activations and tabling that drive sign-ups</span><span>🎯</span></div>
-            <div class="linkcard"><span>Social campaigns with clear KPI tracking</span><span>📊</span></div>
-            <div class="linkcard"><span>Survey design - field data collection - reporting</span><span>🧪</span></div>
-            <div class="linkcard"><span>Partnerships and student org collaborations</span><span>🤝</span></div>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Example deliverables</h3>
-          <ul class="list">
-            <li>Activation plan with staffing, incentives, and budget</li>
-            <li>Content calendar - hooks, CTAs, assets, and metrics</li>
-            <li>Survey instrument - pilot feedback - revision log</li>
-            <li>Post-activation report - conversions - lessons learned</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section id="what" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">What am I looking for?</h2>
+    <p class="mt-4 text-slate-700">Part‑time or project‑based roles in brand marketing, campus activations, social strategy, and research‑driven insights work. I am excited by roles that combine audience discovery, content production, and measurable growth.</p>
+  </section>
 
-    <!-- WHEN -->
-    <section id="when" class="section anchor">
-      <h2>When can you start</h2>
-      <div class="card">
-        <p>I can start immediately for remote work and most on-campus projects. For off-campus or field work, I can coordinate schedules around class times. Weekend and evening availability is flexible. I respond quickly and I like clear weekly checkpoints.</p>
-      </div>
-    </section>
+  <section id="when" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">When can I start?</h2>
+    <p class="mt-4 text-slate-700">Immediately for remote and project work. On‑site availability built around a student schedule. I communicate clearly, set expectations, and deliver on time.</p>
+  </section>
 
-    <!-- WHERE -->
-    <section id="where" class="section anchor">
-      <h2>Where are you located</h2>
-      <div class="card">
-        <p>Based in Fullerton, California with access to the CSUF campus community. Open to Orange County and Los Angeles assignments. Comfortable with hybrid or remote work.</p>
-      </div>
-    </section>
+  <section id="where" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Where am I located?</h2>
+    <p class="mt-4 text-slate-700">Southern California with strong ties to the CSUF community. Comfortable supporting activations at CSUF and partner campuses across the region.</p>
+  </section>
 
-    <!-- WHY -->
-    <section id="why" class="section anchor">
-      <h2>Why a For Hire page</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <p>I treat this page like a living portfolio that cuts the guesswork for recruiters. It shows who I am, what I can do, and how to book me fast. It is also proof that I can ship a clean, useful page - which is a useful signal for marketing work that needs clarity and speed.</p>
-          <p>Hiring is easier when there is less friction. This page puts contact buttons up front, shows relevant metrics, and gives a quick story, so you can decide in minutes.</p>
-        </div>
-        <div class="card">
-          <h3>Benefits for my search</h3>
-          <ul class="list">
-            <li>Shows measurable outcomes - impressions, conversions, funds raised</li>
-            <li>Highlights leadership - FFA President and Formula SAE CMO</li>
-            <li>Demonstrates research literacy - IRB, survey design, analysis</li>
-            <li>Provides easy contact and immediate next steps</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section id="why" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Why a “for hire” page?</h2>
+    <p class="mt-4 text-slate-700">This page makes my value crystal clear for hiring teams: outcomes, context, and proof. Recruiters can scan results, verify scope, and contact me fast. It also anchors my outreach — every email and DM points here, which increases reply rates and shortens time to hire.</p>
+  </section>
 
-    <!-- HOW -->
-    <section id="how" class="section anchor">
-      <h2>How to reach me</h2>
-      <div class="contact-card">
-        <div class="card">
-          <div class="contact-item">📞 <a href="tel:+19518526664">+1 951 852 6664</a></div>
-          <div class="contact-item">✉️ <a href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></div>
-          <div class="contact-item">💼 <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/roman-fu-6142561b3/">LinkedIn - roman-fu</a></div>
-        </div>
-        <div class="card">
-          <h3>Quick intro message</h3>
-          <p>If you want me to support an activation or research sprint, include your timeline, location, and goals. I will reply with my availability and a simple scope.</p>
-          <a class="btn" href="mailto:fumanro88@gmail.com?subject=Hire%20Roman%20Fu&body=Hi%20Roman%2C%0A%0AWe'd%20like%20help%20with%3A%20%5Bbrief%20description%5D%0ATimeline%3A%20%0ALocation%3A%20%0ABudget%3A%20%0A%0AThanks!">Email me</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section id="resume" class="section anchor">
-      <h2>Resume</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Experience</h3>
-          <ul class="list">
-            <li><strong>Campus Manager - Depop</strong> - Sep 2025 to Present - planned 8 activations - 100 conversions - weekly strategy - 30,000 plus impressions</li>
-            <li><strong>Team Lead - Newbridge Marketing</strong> - May 2025 to Present - led YouTube x NFL Street Team at USC and CSUF - 8,000 flyers - 800 QR scans - 10,000 plus impressions - survey insights</li>
-            <li><strong>Research Intern - Project Gamble - CSUF and UCI</strong> - Sep 2025 to Present - segmentation for survey design and outreach - refine instruments - visual reports - weekly presentations - field collection with IRB standards</li>
-            <li><strong>Marketing Intern - Temecula Chamber of Commerce</strong> - Jun 2024 to Aug 2024 - produced ShopLocal materials using Canva - Sprout Social - CapCut - supported 10 workshops and events</li>
-            <li><strong>Program Coordinator - United Studios of Self Defense</strong> - May 2017 to Aug 2021 - 50 conversions - 500 plus lessons - five partner demos driving 20 percent more prospects</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Activities and leadership</h3>
-          <ul class="list">
-            <li><strong>Chief Marketing Officer - Formula SAE</strong> - Aug 2025 to Present - built the marketing team - strategy and growth objectives - operations and scalability</li>
-            <li><strong>President - Fullerton Fashion Association</strong> - Nov 2023 to Jan 2025 - Poshmark partnership - 400 plus sign-ups - 30 percent lift in engagement - 8 hosted by Poshmark - 40 general events</li>
-            <li><strong>American Marketing Association - CSUF</strong> - Co-VP of Fundraising - led sponsorship outreach and event support</li>
-            <li><strong>Depop Campus Ambassador - prior cohort</strong> - supported tablings and student partnerships</li>
-            <li><strong>Study Abroad - London - HSS 499</strong> - built a video essay on fashion - identity - and culture - performed museum research and interviews</li>
-          </ul>
-          <h3>Skills</h3>
-          <p>Excel - vlookup - pivot tables and charts - solver - goal seek - SPSS - Canva - CapCut - Adobe - Google Workspace - Microsoft Suite - Brandwatch - event and activation planning - data analysis - team leadership and workflow management</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXTRA CURRICULAR SHOWCASE -->
-    <section id="extras" class="section anchor">
-      <h2>Extracurricular showcase</h2>
-      <div class="grid cols-3">
-        <div class="card">
-          <h3>Campus Activations</h3>
-          <p>Concept to tabling - incentives - staffing - art supplies - QR tracking - post-mortem reporting.</p>
-        </div>
-        <div class="card">
-          <h3>Fashion and Culture</h3>
-          <p>Led FFA growth - organized speaker panels and brand collabs - documented exhibits in London for research.</p>
-        </div>
-        <div class="card">
-          <h3>Research Support</h3>
-          <p>Segmentation frameworks - field surveys - coding and thematic synthesis - visual reports for stakeholders.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section anchor">
-      <h2>Photos</h2>
-      <p>These images should highlight personality and work style. Replace the placeholder files in the <code>images/</code> folder with your own photos using the same names to keep the layout intact.</p>
-      <div class="gallery grid cols-4" aria-label="Photo gallery">
-        <img src="images/roman1.jpg" alt="Roman at a campus table activation" />
-        <img src="images/roman2.jpg" alt="Roman leading a meeting with teammates" />
-        <img src="images/roman3.jpg" alt="Roman at a networking event" />
-        <img src="images/roman4.jpg" alt="Roman filming social content" />
-        <img src="images/roman5.jpg" alt="Roman presenting a report" />
-        <img src="images/roman6.jpg" alt="Roman at a museum - London study abroad" />
-        <img src="images/roman7.jpg" alt="Roman at a fashion event booth" />
-        <img src="images/roman8.jpg" alt="Roman working on a laptop outdoors" />
-        <img src="images/roman9.jpg" alt="Roman with Formula SAE team" />
-        <img src="images/roman10.jpg" alt="Roman tabling with Depop signage" />
-        <img src="images/roman11.jpg" alt="Roman with friends at a campus event" />
-        <img src="images/roman12.jpg" alt="Roman casual portrait" />
-      </div>
-    </section>
-  </main>
-
-  <footer class="container">
-    <div class="grid cols-2">
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid lg:grid-cols-2 gap-8 items-start">
       <div>
-        <strong>Roman Fu</strong>
-        <p>Business Administration - Marketing - and Psychology at CSUF. For Hire for creative activations and research support.</p>
+        <h2 class="text-3xl font-extrabold">How can you reach me?</h2>
+        <p class="mt-4 text-slate-700">Phone and email are best. I respond within one business day.</p>
+        <ul class="mt-6 space-y-2 text-lg">
+          <li><strong>Phone:</strong> <a class="underline" href="tel:+19518526664">+1 (951) 852‑6664</a></li>
+          <li><strong>Email:</strong> <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">linkedin.com/in/roman-fu-6142561b3</a></li>
+        </ul>
+        <form id="quickForm" class="mt-6 card rounded-2xl p-4">
+          <label class="block text-sm font-semibold">Quick note</label>
+          <input id="qname" class="mt-2 w-full border rounded-xl p-3" placeholder="Your name" />
+          <input id="qrole" class="mt-3 w-full border rounded-xl p-3" placeholder="Your company or role" />
+          <textarea id="qmsg" class="mt-3 w-full border rounded-xl p-3" rows="4" placeholder="Tell me about the role or project"></textarea>
+          <button type="submit" class="mt-3 px-4 py-2 rounded-xl bg-slate-900 text-white font-semibold">Open Email Draft</button>
+          <p class="mt-2 text-xs text-slate-500">This opens a prefilled email to fumanro88@gmail.com on your device.</p>
+        </form>
       </div>
-      <div class="list">
-        <div class="linkcard"><span>Phone</span><a href="tel:+19518526664">+1 951 852 6664</a></div>
-        <div class="linkcard"><span>Email</span><a href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></div>
-        <div class="linkcard"><span>LinkedIn</span><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/roman-fu-6142561b3/">linkedin.com/in/roman-fu-6142561b3</a></div>
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-xl font-extrabold">At a glance</h3>
+        <ul class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+          <li class="chip">Business Marketing + Psychology</li>
+          <li class="chip">Event and activation ops</li>
+          <li class="chip">Social campaigns 30k+ impressions</li>
+          <li class="chip">Survey design and field research</li>
+          <li class="chip">Leadership and team building</li>
+          <li class="chip">Data analysis • SPSS</li>
+        </ul>
       </div>
     </div>
-    <p style="margin-top:14px;color:#7c8596">© <span id="yr"></span> Roman Fu. All rights reserved.</p>
+  </section>
+
+  <!-- Resume‑style Sections -->
+  <section id="experience" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Experience</h2>
+    <div class="mt-6 grid gap-6">
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Campus Manager — Depop <span class="text-slate-500 font-semibold">Sep 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Planned and executed eight campus activations that generated 100 conversions and increased market penetration.</li>
+          <li>Led weekly marketing and strategy meetings to optimize target segment reach and drive KPIs.</li>
+          <li>Ran social campaigns that produced 30,000+ impressions and boosted brand awareness.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Team Lead — Newbridge Marketing <span class="text-slate-500 font-semibold">May 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Led the YouTube × NFL Street Team campaign at USC and CSUF using guerilla tactics.</li>
+          <li>Distributed 8,000 flyers, generated 800 QR scans, and drove 10,000+ impressions.</li>
+          <li>Analyzed post‑activation surveys to deliver actionable insights on campaign performance.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Research Intern — Project Gamble (CSUF, UCI) <span class="text-slate-500 font-semibold">Sep 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Applied segmentation frameworks to improve community survey design and outreach.</li>
+          <li>Refined survey instruments, built visual reports, and presented insights in weekly meetings.</li>
+          <li>Supported field data collection while maintaining IRB standards and qualitative logs.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Marketing Intern — Temecula Chamber of Commerce <span class="text-slate-500 font-semibold">Jun 2024 to Aug 2024</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Produced marketing assets for the ShopLocal program using Canva, Sprout Social, and CapCut.</li>
+          <li>Participated in ten workshops, networking events, and ribbon cuttings.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Program Coordinator — United Studios of Self Defense <span class="text-slate-500 font-semibold">May 2017 to Aug 2021</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Converted approximately 50 prospects to customers by communicating program value.</li>
+          <li>Taught 500+ group and private lessons tailored to client goals.</li>
+          <li>Collaborated with five organizations for demos that lifted in‑door prospects by 20%.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="activities" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Activities and Leadership</h2>
+    <div class="mt-6 grid gap-6">
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Chief Marketing Officer — Formula SAE <span class="text-slate-500 font-semibold">Aug 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Built the marketing team from zero. Recruited, onboarded, and defined roles.</li>
+          <li>Set strategy, growth objectives, timelines, and positioning for the org.</li>
+          <li>Own operations through task delegation, workflow management, and planning for scale.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">President — Fullerton Fashion Association <span class="text-slate-500 font-semibold">Nov 2023 to Jan 2025</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Forged a partnership with Poshmark that drove 400+ sign‑ups and 30% higher engagement.</li>
+          <li>Fundraised $7,300+ via partnerships and collaborations.</li>
+          <li>Directed eight Poshmark‑hosted events and forty general events aligned to brand goals.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Skills and Tools</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-lg font-bold">Marketing and Ops</h3>
+        <ul class="mt-2 grid grid-cols-2 gap-2 text-sm">
+          <li class="chip">Event planning</li>
+          <li class="chip">Activation ops</li>
+          <li class="chip">Social strategy</li>
+          <li class="chip">Leadership</li>
+          <li class="chip">Workflow management</li>
+        </ul>
+      </div>
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-lg font-bold">Analytics and Tools</h3>
+        <ul class="mt-2 grid grid-cols-2 gap-2 text-sm">
+          <li class="chip">Excel: VLOOKUP, PivotTables, Solver, Goal Seek</li>
+          <li class="chip">SPSS • Thematic coding</li>
+          <li class="chip">Instagram • TikTok • YouTube • Brandwatch</li>
+          <li class="chip">Canva • CapCut • Adobe</li>
+          <li class="chip">Google Workspace • Microsoft 365</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Education</h2>
+    <div class="mt-6 card rounded-2xl p-6">
+      <h3 class="text-xl font-bold">California State University, Fullerton</h3>
+      <p class="text-slate-700">B.A. Business Administration, Marketing Concentration • B.A. Psychology • Expected Graduation: 2026</p>
+    </div>
+  </section>
+
+  <!-- Photo gallery with many images to showcase personality -->
+  <section id="gallery" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Photos</h2>
+    <p class="mt-2 text-slate-700">A quick look at campus life, events, and the work vibe. Replace these with your own images in <code>/assets</code>.</p>
+    <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman1/800/600" alt="Roman photo 1">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman2/800/600" alt="Roman photo 2">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman3/800/600" alt="Roman photo 3">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman4/800/600" alt="Roman photo 4">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman5/800/600" alt="Roman photo 5">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman6/800/600" alt="Roman photo 6">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman7/800/600" alt="Roman photo 7">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman8/800/600" alt="Roman photo 8">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-8 border-t">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6 items-center">
+      <div>
+        <p class="font-extrabold">Roman Fu</p>
+        <p class="text-sm text-slate-600">Marketing + Psychology • CSUF ‘26</p>
+      </div>
+      <div class="text-sm text-slate-700">
+        <p>Contact: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a> • <a class="underline" href="tel:+19518526664">+1 (951) 852‑6664</a></p>
+        <p>LinkedIn: <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">roman‑fu</a></p>
+      </div>
+      <div class="flex md:justify-end">
+        <a href="#top" class="px-4 py-2 rounded-xl border font-semibold">Back to top</a>
+      </div>
+    </div>
   </footer>
 
   <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    // Prefilled email via mailto
+    document.getElementById('quickForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('qname').value || '');
+      const role = encodeURIComponent(document.getElementById('qrole').value || '');
+      const msg = encodeURIComponent(document.getElementById('qmsg').value || '');
+      const subject = `Opportunity for Roman — ${decodeURIComponent(role)}`;
+      const body = `Hi Roman,%0D%0A%0D%0AMy name is ${name}. I am reaching out about ${role}.%0D%0A%0D%0A${msg}%0D%0A%0D%0AThanks!`;
+      window.location.href = `mailto:fumanro88@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    });
   </script>
 </body>
 </html>
-
