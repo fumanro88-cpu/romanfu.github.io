@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN for a single‑file site on GitHub Pages -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--ring:rgba(59,130,246,.5)}
@@ -34,7 +35,7 @@
         <a href="#experience" class="hover:underline">Experience</a>
         <a href="#activities" class="hover:underline">Activities</a>
         <a href="#skills" class="hover:underline">Skills</a>
-        <a href="#education" class="hover:underline">Education</a>
+        <a href="#gallery" class="hover:underline">Photos</a>
       </nav>
       <div class="flex items-center gap-2">
         <a href="#contact" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-sm font-semibold focus-ring">Hire Me</a>
@@ -43,7 +44,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8">
+  <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8 grid md:grid-cols-2 gap-8 items-center">
     <div>
       <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research‑minded Creator</span></h1>
       <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research‑informed strategies that convert.</p>
@@ -59,6 +60,15 @@
         <a href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold focus-ring text-center">LinkedIn</a>
       </div>
       <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852‑6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
+    </div>
+    <div class="grid grid-cols-3 gap-3">
+      <!-- Swap these placeholders with your own photos in /assets once you push to GitHub -->
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975922215-c8e3f4d0f94f?q=80&w=900&auto=format&fit=crop" alt="Roman — campus activation"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=900&auto=format&fit=crop" alt="Roman — speaking"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1520975685018-4c09e94d9f8d?q=80&w=900&auto=format&fit=crop" alt="Roman — event ops"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=900&auto=format&fit=crop" alt="Team meeting"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=900&auto=format&fit=crop" alt="Branding board"/>
+      <img class="rounded-2xl h-40 w-full object-cover card" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=900&auto=format&fit=crop" alt="Notebook planning"/>
     </div>
   </section>
 
@@ -121,26 +131,125 @@
     </div>
   </section>
 
+  <!-- Resume‑style Sections -->
   <section id="experience" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Experience</h2>
-    <!-- Experience articles unchanged -->
+    <div class="mt-6 grid gap-6">
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Campus Manager — Depop <span class="text-slate-500 font-semibold">Sep 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Planned and executed eight campus activations that generated 100 conversions and increased market penetration.</li>
+          <li>Led weekly marketing and strategy meetings to optimize target segment reach and drive KPIs.</li>
+          <li>Ran social campaigns that produced 30,000+ impressions and boosted brand awareness.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Team Lead — Newbridge Marketing <span class="text-slate-500 font-semibold">May 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Led the YouTube × NFL Street Team campaign at USC and CSUF using guerilla tactics.</li>
+          <li>Distributed 8,000 flyers, generated 800 QR scans, and drove 10,000+ impressions.</li>
+          <li>Analyzed post‑activation surveys to deliver actionable insights on campaign performance.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Research Intern — Project Gamble (CSUF, UCI) <span class="text-slate-500 font-semibold">Sep 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Applied segmentation frameworks to improve community survey design and outreach.</li>
+          <li>Refined survey instruments, built visual reports, and presented insights in weekly meetings.</li>
+          <li>Supported field data collection while maintaining IRB standards and qualitative logs.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Marketing Intern — Temecula Chamber of Commerce <span class="text-slate-500 font-semibold">Jun 2024 to Aug 2024</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Produced marketing assets for the ShopLocal program using Canva, Sprout Social, and CapCut.</li>
+          <li>Participated in ten workshops, networking events, and ribbon cuttings.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Program Coordinator — United Studios of Self Defense <span class="text-slate-500 font-semibold">May 2017 to Aug 2021</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Converted approximately 50 prospects to customers by communicating program value.</li>
+          <li>Taught 500+ group and private lessons tailored to client goals.</li>
+          <li>Collaborated with five organizations for demos that lifted in‑door prospects by 20%.</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
   <section id="activities" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Activities and Leadership</h2>
-    <!-- Activities unchanged -->
+    <div class="mt-6 grid gap-6">
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">Chief Marketing Officer — Formula SAE <span class="text-slate-500 font-semibold">Aug 2025 to Present</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Built the marketing team from zero. Recruited, onboarded, and defined roles.</li>
+          <li>Set strategy, growth objectives, timelines, and positioning for the org.</li>
+          <li>Own operations through task delegation, workflow management, and planning for scale.</li>
+        </ul>
+      </article>
+      <article class="card rounded-2xl p-6">
+        <h3 class="text-xl font-bold">President — Fullerton Fashion Association <span class="text-slate-500 font-semibold">Nov 2023 to Jan 2025</span></h3>
+        <ul class="list-disc ml-5 mt-2 text-slate-700">
+          <li>Forged a partnership with Poshmark that drove 400+ sign‑ups and 30% higher engagement.</li>
+          <li>Fundraised $7,300+ via partnerships and collaborations.</li>
+          <li>Directed eight Poshmark‑hosted events and forty general events aligned to brand goals.</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
   <section id="skills" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Skills and Tools</h2>
-    <!-- Skills unchanged -->
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-lg font-bold">Marketing and Ops</h3>
+        <ul class="mt-2 grid grid-cols-2 gap-2 text-sm">
+          <li class="chip">Event planning</li>
+          <li class="chip">Activation ops</li>
+          <li class="chip">Social strategy</li>
+          <li class="chip">Leadership</li>
+          <li class="chip">Workflow management</li>
+        </ul>
+      </div>
+      <div class="card rounded-2xl p-6">
+        <h3 class="text-lg font-bold">Analytics and Tools</h3>
+        <ul class="mt-2 grid grid-cols-2 gap-2 text-sm">
+          <li class="chip">Excel: VLOOKUP, PivotTables, Solver, Goal Seek</li>
+          <li class="chip">SPSS • Thematic coding</li>
+          <li class="chip">Instagram • TikTok • YouTube • Brandwatch</li>
+          <li class="chip">Canva • CapCut • Adobe</li>
+          <li class="chip">Google Workspace • Microsoft 365</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="education" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">Education</h2>
-    <!-- Education unchanged -->
+    <div class="mt-6 card rounded-2xl p-6">
+      <h3 class="text-xl font-bold">California State University, Fullerton</h3>
+      <p class="text-slate-700">B.A. Business Administration, Marketing Concentration • B.A. Psychology • Expected Graduation: 2026</p>
+    </div>
   </section>
 
+  <!-- Photo gallery with many images to showcase personality -->
+  <section id="gallery" class="mx-auto max-w-6xl px-4 py-12">
+    <h2 class="text-3xl font-extrabold">Photos</h2>
+    <p class="mt-2 text-slate-700">A quick look at campus life, events, and the work vibe. Replace these with your own images in <code>/assets</code>.</p>
+    <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman1/800/600" alt="Roman photo 1">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman2/800/600" alt="Roman photo 2">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman3/800/600" alt="Roman photo 3">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman4/800/600" alt="Roman photo 4">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman5/800/600" alt="Roman photo 5">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman6/800/600" alt="Roman photo 6">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman7/800/600" alt="Roman photo 7">
+      <img class="rounded-2xl aspect-[4/3] object-cover card" src="https://picsum.photos/seed/roman8/800/600" alt="Roman photo 8">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="mt-8 border-t">
     <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6 items-center">
       <div>
@@ -158,6 +267,7 @@
   </footer>
 
   <script>
+    // Prefilled email via mailto
     document.getElementById('quickForm').addEventListener('submit', function(e){
       e.preventDefault();
       const name = encodeURIComponent(document.getElementById('qname').value || '');
