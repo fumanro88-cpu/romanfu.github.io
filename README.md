@@ -2,49 +2,40 @@
 Roman's personal website
 <!DOCTYPE html>
 </div>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
 <div class="card">
-<span class="kicker">Extras</span>
-<h2>Projects, study abroad, and interests</h2>
-<ul>
-<li>Independent Study: video essay on modern fashion, identity, and race using museum research in London</li>
-<li>Event concepts: Depop IRL tote decorating, clothing swaps, and collabs with campus orgs</li>
-<li>Analytics: Brandwatch listening projects and social KPI tracking</li>
-<li>Fitness goal: building upper‑body strength for climbing and training for a half marathon</li>
-</ul>
+<span class="kicker">For Hire</span>
+<h1>Hi, I’m Roman Fu</h1>
+<p class="lead">CSUF Business Marketing and Psychology student pairing brand strategy with behavioral research. Campus Manager at Depop, Team Lead at Newbridge Marketing, and CMO for Formula SAE. I plan and execute campaigns that convert and I communicate insights that teams can act on.</p>
+<div class="pillrow">
+<span class="pill">Campus Activations</span>
+<span class="pill">Social Strategy</span>
+<span class="pill">Data Storytelling</span>
+<span class="pill">Behavioral Research</span>
+<span class="pill">Event Ops</span>
+<span class="pill">Leadership</span>
 </div>
+<div class="pillrow">
+<a class="btn" href="mailto:fumanro88@gmail.com">Email</a>
+<a class="btn" href="tel:+19518526664">Call</a>
+<a class="btn" href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="RomanFu_10092025_m.pdf" target="_blank">Resume PDF</a>
+<a class="btn" href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" rel="noopener">My LinkedIn Profile</a>
+</div>
+</div>
+<div>
+<img class="avatar" src="roman professional photo.jpg" alt="Professional photo of Roman Fu" />
 </div>
 </section>
 
 
-<div class="band"></div>
-
-
-<section id="photos" class="card">
-<span class="kicker">Photos</span>
-<h2>A quick look at personality and projects</h2>
-<p>Swap the placeholders with your photos. Keep file names short. The grid adapts to screens and supports as many images as you add.</p>
-<div class="gallery">
-<!-- Replace each src with your own image URLs or paths in your repo (e.g., /images/roman-01.jpg) -->
-<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Activation moment placeholder" />
-<img src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?q=80&w=800&auto=format&fit=crop" alt="Speaking at an event placeholder" />
-<img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=800&auto=format&fit=crop" alt="Campus life placeholder" />
-<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" alt="Working session placeholder" />
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=800&auto=format&fit=crop" alt="Brand moment placeholder" />
-<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop" alt="Team photo placeholder" />
-</div>
-<p class="notice">To add more photos, duplicate the <code>&lt;img&gt;</code> tag and update the <code>src</code> and <code>alt</code>.</p>
-</section>
-
-
-<section class="card">
-<span class="kicker">Links</span>
-<h2>Downloads and profiles</h2>
-<ul>
-<li><a href="#" onclick="alert('Add your resume PDF to your repo and link it here, like /Roman-Fu-Resume.pdf'); return false;">Download my resume (PDF)</a></li>
-<li><a href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" rel="noopener">LinkedIn</a></li>
-<li><a href="mailto:fumanro88@gmail.com">Email</a></li>
-</ul>
-</section>
+<!-- rest of the code remains unchanged -->
 
 
 <footer class="footer">
