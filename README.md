@@ -1,5 +1,9 @@
 # Roman Fu — For Hire
 
+<p align="center">
+  <img src="roman%20professional%20photo.jpg" alt="Roman Fu" width="500"/>
+</p>
+
 **Phone:** +1 (951) 852-6664  
 **Email:** [fumanro88@gmail.com](mailto:fumanro88@gmail.com)  
 **LinkedIn:** [linkedin.com/in/roman-fu-6142561b3](https://www.linkedin.com/in/roman-fu-6142561b3)
@@ -44,8 +48,6 @@ This page gives hiring teams one place to see outcomes, scope, and proof. It als
 - **Phone:** +1 (951) 852-6664  
 - **Email:** [fumanro88@gmail.com](mailto:fumanro88@gmail.com)  
 - **LinkedIn:** [roman-fu-6142561b3](https://www.linkedin.com/in/roman-fu-6142561b3)
-
-If you prefer, send a short note with your role, timeframe, and goals. I will reply within one business day.
 
 ---
 
@@ -117,9 +119,7 @@ Expected Graduation: 2026
 
 ---
 
-## Photos
-I removed images for now to keep this README simple. If you want to add photos later, you can include them like this:
-
-```markdown
-![Roman at event](assets/roman-event.jpg)
-![Campus activation](assets/campus-activation.jpg)
+## Quick links
+- **Call:** +1 (951) 852-6664  
+- **Email:** [fumanro88@gmail.com](mailto:fumanro88@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/roman-fu-6142561b3](https://www.linkedin.com/in/roman-fu-6142561b3)
