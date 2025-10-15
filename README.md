@@ -15,6 +15,7 @@
   </style>
 </head>
 <body class="bg-gradient-to-b from-slate-50 to-white text-slate-900">
+  <!-- Header / Nav -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#top" class="font-extrabold tracking-tight text-xl">Roman Fu</a>
@@ -37,13 +38,13 @@
   <!-- Hero -->
   <section id="top" class="mx-auto max-w-6xl px-4 pt-10 pb-8 grid md:grid-cols-2 gap-8 items-center">
     <div>
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research‑minded Creator</span></h1>
-      <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research‑informed strategies that convert.</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">For Hire: <span class="text-slate-600">Marketing Strategist • Campus Activator • Research-minded Creator</span></h1>
+      <p class="mt-4 text-lg text-slate-700">Business Marketing and Psychology student at <strong>California State University, Fullerton</strong>. I build campus activations, social campaigns, and research-informed strategies that convert.</p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold text-center">Let’s Work Together</a>
         <a href="https://www.linkedin.com/in/roman-fu-6142561b3/" target="_blank" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold text-center">LinkedIn</a>
       </div>
-      <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852‑6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
+      <p class="mt-3 text-sm text-slate-600">Phone: <a href="tel:+19518526664" class="underline">+1 (951) 852-6664</a> • Email: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a></p>
     </div>
     <div>
       <img class="rounded-2xl w-full object-cover card" src="roman professional photo.jpg" alt="Roman Fu Professional Photo"/>
@@ -58,12 +59,12 @@
 
   <section id="what" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">What am I looking for?</h2>
-    <p class="mt-4 text-slate-700">Part‑time or project‑based roles in brand marketing, campus activations, social strategy, and research‑driven insights work. I am excited by roles that combine audience discovery, content production, and measurable growth.</p>
+    <p class="mt-4 text-slate-700">Part-time or project-based roles in brand marketing, campus activations, social strategy, and research-driven insights work. I am excited by roles that combine audience discovery, content production, and measurable growth.</p>
   </section>
 
   <section id="when" class="mx-auto max-w-6xl px-4 py-12">
     <h2 class="text-3xl font-extrabold">When can I start?</h2>
-    <p class="mt-4 text-slate-700">Immediately for remote and project work. On‑site availability built around a student schedule. I communicate clearly, set expectations, and deliver on time.</p>
+    <p class="mt-4 text-slate-700">Immediately for remote and project work. On-site availability built around a student schedule. I communicate clearly, set expectations, and deliver on time.</p>
   </section>
 
   <section id="where" class="mx-auto max-w-6xl px-4 py-12">
@@ -76,7 +77,7 @@
     <p class="mt-4 text-slate-700">This page makes my value crystal clear for hiring teams: outcomes, context, and proof. Recruiters can scan results, verify scope, and contact me fast. It also anchors my outreach — every email and DM points here, which increases reply rates and shortens time to hire.</p>
   </section>
 
-  <!-- Keep contact, experience, activities, skills, and education as before -->
+  <!-- Resume sections remain unchanged -->
 
   <footer class="mt-8 border-t">
     <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6 items-center">
@@ -85,8 +86,8 @@
         <p class="text-sm text-slate-600">Marketing + Psychology • CSUF ‘26</p>
       </div>
       <div class="text-sm text-slate-700">
-        <p>Contact: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a> • <a class="underline" href="tel:+19518526664">+1 (951) 852‑6664</a></p>
-        <p>LinkedIn: <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">roman‑fu</a></p>
+        <p>Contact: <a class="underline" href="mailto:fumanro88@gmail.com">fumanro88@gmail.com</a> • <a class="underline" href="tel:+19518526664">+1 (951) 852-6664</a></p>
+        <p>LinkedIn: <a class="underline" target="_blank" href="https://www.linkedin.com/in/roman-fu-6142561b3/">roman-fu</a></p>
       </div>
       <div class="flex md:justify-end">
         <a href="#top" class="px-4 py-2 rounded-xl border font-semibold">Back to top</a>
